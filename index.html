@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/main.js"></script>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import "https://fonts.googleapis.com/css?family=Kanit";
+
+        * {
+            font-family: "Kanit", sans-serif;
+        }
+    </style>
+    <title>Welcome</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo ml-4">
+                <img src="assets/img/logo.png" class="w-14 rounded-full" alt="">
+            </div>
+            <div class="h-menu" >
+                <ul><a href="#download">ดาวน์โหลด</a></ul>
+                <ul><a href="topup/index.php">เติมเงิน</a></ul>
+                <ul><a href="login/index.php">เข้าสู่ระบบ</a></ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="bg flex justify-center items-start bg-center">
+            <div class="wel mt-28 font-bold animate-bounce text-cyan-950 ">Welcome To EFT</div>
+        </div>
+        
+    </section>
+    <main>
+        <div class="d-m flex justify-center items-center text-7xl bg-zinc-800 text-gray-300">ดาวน์โหลด</div>
+        <div class="container grid items-center" id="download">
+            <div class="c-box">
+                <div class="box" onclick="toLink('https://www.facebook.com/Fiw.Thewaphithak')"> <!-- Change to your url-->
+                    <h1>ดาวน์โหลด PC</h1>
+                    <h3>Download</h3>
+                </div>
+            </div>
+            <div class="c-box">
+                <div class="box" onclick="toLink('https://www.facebook.com/Fiw.Thewaphithak')"> <!-- Change to your url-->
+                    <h1>ดาวน์โหลด มือถือ</h1>
+                    <h3>Download</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex justify-center bg-zinc-800">
+        <p class="text-white">สงวนลิขสิทธิ์ © 2567 By <a href="https://www.facebook.com/Fiw.Thewaphithak">EMPEROR</a></p>
+    </footer>
+</body>
+</html>

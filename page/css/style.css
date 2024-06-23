@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Kanit', sans-serif;
+}
+.h-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 1rem;
+    color: white;
+    position: absolute;
+    right: 1rem;
+}
+
+.h-menu ul a {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+}
+nav .container {
+    
+    display: flex;
+    align-items: center;
+    
+}
+
+main .container {
+    background-color: rgb(45, 45, 45);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+main {
+    width: 100%;
+    background-color: rgb(45, 45, 45);
+}
+
+main .con-g {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* ทำให้ความสูงของ div อย่างน้อยเท่ากับความสูงของหน้าจอ */
+}
+
+
+.progress-bar {
+    width: 80%;
+    height: 20px;
+    background-color: #e0e0df;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.progress-bar-fill {
+    height: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    line-height: 20px; 
+}
+
+#health {
+    margin-bottom: 1rem;
+    background-color: #e12929;
+}
+
+#hungry {
+    background-color: orange;
+}
+
+#thirsty {
+    background-color: aqua;
+}
+
+.box {
+    border-radius: 2rem;
+    margin: 4rem;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid aliceblue;
+    background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+    cursor: pointer;
+}
+.box:hover {
+    background-color: rgb(60, 60, 60);
+}
+
+a {
+    scroll-behavior: smooth;
+}
+
+.box h1 {
+    font-size: 3rem;
+}
+
+.box h3 {
+    font-size: 2rem;
+    animation-name: f-anim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+.d-m {
+    animation-name: d-anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes d-anim {
+    from {color: rgb(255, 255, 255);}
+    to {color: rgb(33, 23, 23);}
+}
+
+@keyframes f-anim {
+    from {color: rgb(255, 0, 0);}
+    to {color: rgb(0, 0, 0);}
+}
+
+.h-menu ul a:hover {
+    color: rgb(181, 181, 181);
+}
+
+
+.bg {
+    font-size: 3rem;
+    background-image: url("../assets/img/ls.png");
+    height: 960px;
+}
+
+.wel {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .h-menu ul a {
+        font-size: 1rem;
+    }
+
+    .box {
+
+        margin: 2rem;
+        height: 400px;
+        width: 300px;
+    }
+
+    .box h1 {
+        font-size: 2rem;
+    }
+    
+    .box h3 {
+        font-size: 2rem;
+    }
+    main .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3rem;
+    }
+}

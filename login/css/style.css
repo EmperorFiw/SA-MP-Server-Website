@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    --tw-bg-opacity: 1;
+    background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+main {
+    width: 100%;
+}
+
+.g-recaptcha {
+    margin-top: 1rem;
+}
+
+.box {
+    height: 70vh;
+    width: 70vh;
+    border: 2px solid white;
+    border-radius: 2rem;
+    background-color: aliceblue;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box label {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.box input {
+    margin-top: 0.5rem;
+    height: 2.5rem;
+}
+
+.box button {
+    margin-top: 1rem;
+    width: 9rem;
+    height: 3rem;
+    border: 2px solid red;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.box button:hover {
+    background-color: red;
+}
+
+.box h1 {
+    font-size: 4rem;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .box {
+        height: auto;
+        width: auto;
+    }
+    html {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+}
