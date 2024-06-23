@@ -2,7 +2,7 @@
 session_start();
 $_SESSION['username'] = null;
 require "../db.php";
-$secret = "6LcQkPwpAAAAAHhyO2xZGmtF6pm4lS5Ic-mVnN8s";
+$secret = "KEY"; //KEY recaptcha 
 
 if (isset($_POST['g-recaptcha-response'])) {
     $captcha = $_POST['g-recaptcha-response'];

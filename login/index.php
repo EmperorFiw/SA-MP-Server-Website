@@ -34,7 +34,7 @@
                 <input type="text" placeholder="ชื่อผู้ใช้" name="user">
                 <label for="">PASSWORD</label>
                 <input type="password" placeholder="รหัสผ่าน" name="password">
-                <div class="g-recaptcha" data-sitekey="6LcQkPwpAAAAAGJ5ZBKvBLtVxXsQQ-hUPSgfx0DZ"></div>
+                <div class="g-recaptcha" data-sitekey="KEY"></div> <!-- KEY recaptcha -->
                 <button type="submit" id="loginbtn">เข้าสู่ระบบ</button>
                 
             </form>
